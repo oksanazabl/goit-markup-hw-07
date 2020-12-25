@@ -1,0 +1,13 @@
+@import "./base/variables";
+@import "./utils/visuallyHhidden";
+@import "./base/common";
+@import "./base/container";
+@import "./components/btn";
+
+@import "./layout/pageHeader";
+
+@import "./layout/potfolioPage/portfolio_main";
+@import "./layout/potfolioPage/portfolioCard";
+
+@import "./layout/indexPage/team";
+@import "./layout/pageFooter";

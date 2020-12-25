@@ -1,0 +1,16 @@
+@import "./base/variables";
+@import "./utils/visuallyHhidden";
+@import "./base/common";
+@import "./base/container";
+@import "./components/btn";
+
+@import "./layout/pageHeader";
+@import "./layout/indexPage/hero";
+@import "./layout/indexPage/about";
+@import "./layout/indexPage/ourWork";
+@import "./layout/indexPage/team";
+@import "./layout/indexPage/client";
+
+@import "./layout/pageFooter";
+
+@import "./layout/formModal";
