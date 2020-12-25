@@ -1,34 +1,29 @@
 .hero {
   min-height: 600px;
-  /*
-  padding-top: 207px;
-  padding-bottom: 193px;
-  */
-
   align-items: center;
   flex-direction: column;
-}
 
-.hero .container {
-  background-color: var(--b-dark);
-  background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url(../images/main/hero.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 600px;
-  max-width: 1600px;
+  &.container {
+    background-color: var(--b-dark);
+    background-image: linear-gradien(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/main/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 600px;
+    max-width: 1600px;
 
-  flex-direction: column;
-}
+    flex-direction: column;
+  }
 
-.hero-descr {
-  margin-top: 207px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  &-descr {
+    margin-top: 207px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .main-title {
@@ -54,18 +49,18 @@
   letter-spacing: 0.05em;
 
   transition: color 250ms var(--timer);
-}
 
-.btn-hero:hover {
-  color: var(--txt-dark);
-  cursor: pointer;
+  &:hover {
+    color: var(--txt-dark);
+    cursor: pointer;
 
-  transform: opasity;
-}
+    transform: opasity;
+  }
 
-.btn-hero:focus {
-  color: var(--txt-dark);
-  cursor: pointer;
+  &:focus {
+    color: var(--txt-dark);
+    cursor: pointer;
 
-  transform: opasity;
+    transform: opasity;
+  }
 }
