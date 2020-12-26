@@ -1,34 +1,20 @@
 /*=========== Common ===========*/
 
-.address:hover .link-icon,
-.address:focus .link-icon {
-  fill: var(--txt-bleu);
-  color: var(--txt-bleu);
-  outline: none;
-
-  transform: opasity;
-}
-
-.link-items:hover,
 .link-contact:hover,
-.link-addres:hover,
-.address:hover {
+.link-addres:hover {
   color: var(--txt-bleu);
 
   transform: opasity;
 }
 
-.link-items:focus,
 .link-contact:focus,
-.link-addres:focus,
-.address:focus {
+.link-addres:focus {
   color: var(--txt-bleu);
   outline: 1px solid #757575;
 
   transform: opasity;
 }
-
-/*=========== END Common ===========*/
+/*=========== END header ===========*/
 
 /*=========== header ===========*/
 

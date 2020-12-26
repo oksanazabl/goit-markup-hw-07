@@ -43,12 +43,38 @@
     color: var(--txt-light);
 
     transition: color 250ms var(--timer);
+
+    &:hover {
+      color: var(--txt-bleu);
+
+      transform: opasity;
+    }
+
+    &:focus {
+      color: var(--txt-bleu);
+      outline: 1px solid #757575;
+
+      transform: opasity;
+    }
   }
 
   &-contact {
     color: rgba(255, 255, 255, 0.6);
 
     transition: color 250ms var(--timer);
+
+    &:hover {
+      color: var(--txt-bleu);
+
+      transform: opasity;
+    }
+
+    &:focus {
+      color: var(--txt-bleu);
+      outline: 1px solid #757575;
+
+      transform: opasity;
+    }
   }
 }
 
