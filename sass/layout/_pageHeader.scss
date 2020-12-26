@@ -120,15 +120,15 @@
 .accent {
   color: var(--txt-bleu);
   position: relative;
+}
 
-  a&::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 4px;
-    top: 45px;
-    border-radius: 4px;
+a .accent::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  top: 45px;
+  border-radius: 4px;
 
-    background-color: var(--b-blue);
-  }
+  background-color: var(--b-blue);
 }

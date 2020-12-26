@@ -99,15 +99,16 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 20px;
-
-  .btn-&:focus,
-  .btn-&:hover {
-    cursor: pointer;
-    color: var(--txt-dark);
-
-    transform: opasity;
-  }
 }
+
+.btn-follow-mailing:focus,
+.btn-follow-mailing:hover {
+  cursor: pointer;
+  color: var(--txt-dark);
+
+  transform: opasity;
+}
+
 
 .mailing {
   &-box {
