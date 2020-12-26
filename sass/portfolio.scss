@@ -6,8 +6,10 @@
 
 @import "./layout/pageHeader";
 
-@import "./layout/potfolioPage/portfolio_main";
-@import "./layout/potfolioPage/portfolioCard";
+@import "./layout/portfolioMain";
 
-@import "./layout/indexPage/team";
+@import "./layout/portfolioCard";
+
+@import "./layout/team";
+
 @import "./layout/pageFooter";
