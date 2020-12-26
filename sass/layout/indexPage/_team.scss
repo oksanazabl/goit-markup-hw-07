@@ -71,11 +71,11 @@
     }
 
     &:focus {
-  background-color: var(--accent-background);
-  outline: 1px solid #757575;
+      background-color: var(--accent-background);
+      outline: 1px solid #757575;
 
-  transform: opasity;
-}
+      transform: opasity;
+    }
   }
 
   &-icon {
@@ -89,15 +89,11 @@
   &-item:not(:last-child) {
     margin-right: 10px;
   }
-  
+
+  &-link:hover &-icon,
+  &-link:focus &-icon {
+    fill: var(--white);
+
+    transform: opasity;
+  }
 }
-
-.social-list .social-list-link:hover .social-list-icon,
-.social-list-link:focus .social-list-icon {
-  fill: var(--white);
-
-  transform: opasity;
-}
-
-
-

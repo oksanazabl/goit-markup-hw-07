@@ -22,13 +22,14 @@
   line-height: 1.19;
   letter-spacing: 0.03em;
   height: 31px;
-}
-.head .logo {
-  margin-right: 93px;
-}
 
-.logo-dark {
-  color: var(--txt-dark);
+  .head & {
+    margin-right: 93px;
+  }
+
+  &-dark {
+    color: var(--txt-dark);
+  }
 }
 
 .link-items {
