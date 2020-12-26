@@ -4,30 +4,23 @@
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: #eeeeee;
-
-  &.nav-address {
-    margin-left: auto;
-  }
 }
-
+.head .container {
+  display: flex;
+  width: 1200px;
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+}
 .nav {
   display: flex;
   align-items: center;
-
-  &-listitems {
-    display: flex;
-    align-items: center;
-
-    &:not(:last-child) {
-      margin-right: 50px;
-    }
-  }
 }
 
 .menu-links {
   display: flex;
 }
-
 .logo {
   font-family: var(--secondary-font);
   color: var(--txt-bleu);
@@ -36,14 +29,13 @@
   line-height: 1.19;
   letter-spacing: 0.03em;
   height: 31px;
+}
+.head .logo {
+  margin-right: 93px;
+}
 
-  .head & {
-    margin-right: 93px;
-  }
-
-  &-dark {
-    color: var(--txt-dark);
-  }
+.logo-dark {
+  color: var(--txt-dark);
 }
 
 .link-items {
@@ -55,19 +47,15 @@
   display: flex;
 
   transition: color 250ms var(--timer);
+}
 
-  &:hover {
-    color: var(--txt-bleu);
+.nav-listitems:not(:last-child) {
+  margin-right: 50px;
+}
 
-    transform: opasity;
-  }
-
-  &:focus {
-    color: var(--txt-bleu);
-    outline: 1px solid #757575;
-
-    transform: opasity;
-  }
+.nav-listitems {
+  display: flex;
+  align-items: center;
 }
 
 .address {
@@ -80,19 +68,6 @@
   letter-spacing: 0.02em;
 
   transition: color 250ms var(--timer);
-
-  &:focus {
-    color: var(--txt-bleu);
-    outline: 1px solid #757575;
-
-    transform: opasity;
-  }
-
-  &:hover {
-    color: var(--txt-bleu);
-
-    transform: opasity;
-  }
 }
 
 .link-icon {
@@ -106,15 +81,10 @@
   object-position: center;
 
   transition: fill 250ms var(--timer);
+}
 
-  .address:hover &,
-  .address:focus & {
-    fill: var(--txt-bleu);
-    color: var(--txt-bleu);
-    outline: none;
-
-    transform: opasity;
-  }
+.head .nav-address {
+  margin-left: auto;
 }
 
 .accent {
@@ -122,7 +92,7 @@
   position: relative;
 }
 
-a .accent::after {
+a.accent::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -131,4 +101,31 @@ a .accent::after {
   border-radius: 4px;
 
   background-color: var(--b-blue);
+}
+.address:hover .link-icon,
+.address:focus .link-icon {
+  fill: var(--txt-bleu);
+  color: var(--txt-bleu);
+  outline: none;
+
+  transform: opasity;
+}
+
+.link-items:hover,
+.link-contact:hover,
+.link-addres:hover,
+.address:hover {
+  color: var(--txt-bleu);
+
+  transform: opasity;
+}
+
+.link-items:focus,
+.link-contact:focus,
+.link-addres:focus,
+.address:focus {
+  color: var(--txt-bleu);
+  outline: 1px solid #757575;
+
+  transform: opasity;
 }

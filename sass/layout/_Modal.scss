@@ -8,10 +8,15 @@
   background-color: rgba(0, 0, 0, 0.5);
 
   transition: all 250ms var(--timer);
+}
 
-  &.is-hidden {
-    transition: all 250ms var(--timer);
-  }
+.backdrop.is-hidden {
+  transition: all 250ms var(--timer);
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0);
+  transition: opacity 250ms var(--timer);
 }
 
 .modal {
@@ -29,11 +34,6 @@
   border-radius: 4px;
 
   transition: transform 250ms var(--timer);
-
-  .backdrop.is-hidden & {
-    transform: translate(-50%, -50%) scale(0);
-    transition: opacity 250ms var(--timer);
-  }
 }
 
 .close-btn {
