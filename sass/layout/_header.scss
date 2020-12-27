@@ -46,6 +46,19 @@
     display: flex;
 
     transition: color 250ms var(--timer);
+
+    &:hover {
+      color: var(--txt-bleu);
+
+      transform: opasity;
+    }
+
+    &:focus {
+      color: var(--txt-bleu);
+      outline: 1px solid #757575;
+
+      transform: opasity;
+    }
   }
 
   &-icon {
@@ -72,6 +85,28 @@
   letter-spacing: 0.02em;
 
   transition: color 250ms var(--timer);
+
+  &:focus {
+    color: var(--txt-bleu);
+    outline: 1px solid #757575;
+
+    transform: opasity;
+  }
+
+  &:hover {
+    color: var(--txt-bleu);
+
+    transform: opasity;
+  }
+
+  &:hover .link-icon,
+  &:focus .link-icon {
+    fill: var(--txt-bleu);
+    color: var(--txt-bleu);
+    outline: none;
+
+    transform: opasity;
+  }
 }
 
 .accent {
