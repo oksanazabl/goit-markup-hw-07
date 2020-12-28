@@ -1,3 +1,220 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  display: block;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+hr {
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+a {
+  background-color: transparent;
+}
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
+  text-decoration: underline dotted;
+}
+
+b, strong {
+  font-weight: bolder;
+}
+
+code, kbd, samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+img {
+  border-style: none;
+}
+
+button, input, optgroup, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+button, input {
+  overflow: visible;
+}
+
+button, select {
+  text-transform: none;
+}
+
+button, [type=button], [type=reset], [type=submit] {
+  -webkit-appearance: button;
+}
+
+button::-moz-focus-inner, [type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+button:-moz-focusring, [type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+legend {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+textarea {
+  overflow: auto;
+}
+
+[type=checkbox], [type=radio] {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+[type=number]::-webkit-inner-spin-button, [type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type=search] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+details {
+  display: block;
+}
+
+summary {
+  display: list-item;
+}
+
+template {
+  display: none;
+}
+
+[hidden] {
+  display: none;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../font/Roboto-Black.woff2") format("woff2"), url("../font/Roboto-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../font/Roboto-Bold.woff2") format("woff2"), url("../font/Roboto-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../font/Roboto-Medium.woff2") format("woff2"), url("../font/Roboto-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../font/Roboto-Regular.woff2") format("woff2"), url("../font/Roboto-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("../font/Raleway-Bold.woff2") format("woff2"), url("../font/Raleway-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+:root {
+  /*baclgraund color*/
+  --b-dark: #2f303a;
+  --b-middle: #f5f4fa;
+  --b-blue: #2196f3;
+  --b-white: #ffffff;
+  --b-black: #000000;
+  /*text color*/
+  --txt-dark: #212121;
+  --txt-grey: #757575;
+  --txt-light: #ffffff;
+  --txt-bleu: #2196f3;
+  /*icon*/
+  --light: #afb1b8;
+  --white: #ffffff;
+  --accent-background: #2196f3;
+  --dark-background: rgba(255, 255, 255, 0.1);
+  --light-background: #ffffff;
+  /*fonts*/
+  --main-font: Roboto, sans-serif;
+  --secondary-font: Raleway, sans-serif;
+  --timer: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 :root {
   /*baclgraund color*/
   --b-dark: #2f303a;
@@ -86,6 +303,30 @@ img {
   padding: 94px 0;
 }
 
+:root {
+  /*baclgraund color*/
+  --b-dark: #2f303a;
+  --b-middle: #f5f4fa;
+  --b-blue: #2196f3;
+  --b-white: #ffffff;
+  --b-black: #000000;
+  /*text color*/
+  --txt-dark: #212121;
+  --txt-grey: #757575;
+  --txt-light: #ffffff;
+  --txt-bleu: #2196f3;
+  /*icon*/
+  --light: #afb1b8;
+  --white: #ffffff;
+  --accent-background: #2196f3;
+  --dark-background: rgba(255, 255, 255, 0.1);
+  --light-background: #ffffff;
+  /*fonts*/
+  --main-font: Roboto, sans-serif;
+  --secondary-font: Raleway, sans-serif;
+  --timer: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .logo {
   font-family: var(--secondary-font);
   color: var(--txt-bleu);
@@ -102,15 +343,63 @@ img {
   color: var(--txt-light);
 }
 
+:root {
+  /*baclgraund color*/
+  --b-dark: #2f303a;
+  --b-middle: #f5f4fa;
+  --b-blue: #2196f3;
+  --b-white: #ffffff;
+  --b-black: #000000;
+  /*text color*/
+  --txt-dark: #212121;
+  --txt-grey: #757575;
+  --txt-light: #ffffff;
+  --txt-bleu: #2196f3;
+  /*icon*/
+  --light: #afb1b8;
+  --white: #ffffff;
+  --accent-background: #2196f3;
+  --dark-background: rgba(255, 255, 255, 0.1);
+  --light-background: #ffffff;
+  /*fonts*/
+  --main-font: Roboto, sans-serif;
+  --secondary-font: Raleway, sans-serif;
+  --timer: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .btn {
   background-color: var(--b-blue);
-  font-family: var(--secondary-font);
+  font-family: var(--main-font);
   font-weight: bold;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
   border: none;
   border-radius: 4px;
+}
+
+:root {
+  /*baclgraund color*/
+  --b-dark: #2f303a;
+  --b-middle: #f5f4fa;
+  --b-blue: #2196f3;
+  --b-white: #ffffff;
+  --b-black: #000000;
+  /*text color*/
+  --txt-dark: #212121;
+  --txt-grey: #757575;
+  --txt-light: #ffffff;
+  --txt-bleu: #2196f3;
+  /*icon*/
+  --light: #afb1b8;
+  --white: #ffffff;
+  --accent-background: #2196f3;
+  --dark-background: rgba(255, 255, 255, 0.1);
+  --light-background: #ffffff;
+  /*fonts*/
+  --main-font: Roboto, sans-serif;
+  --secondary-font: Raleway, sans-serif;
+  --timer: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-list {
@@ -164,6 +453,30 @@ img {
 
 .social-list-item:not(:last-child) {
   margin-right: 10px;
+}
+
+:root {
+  /*baclgraund color*/
+  --b-dark: #2f303a;
+  --b-middle: #f5f4fa;
+  --b-blue: #2196f3;
+  --b-white: #ffffff;
+  --b-black: #000000;
+  /*text color*/
+  --txt-dark: #212121;
+  --txt-grey: #757575;
+  --txt-light: #ffffff;
+  --txt-bleu: #2196f3;
+  /*icon*/
+  --light: #afb1b8;
+  --white: #ffffff;
+  --accent-background: #2196f3;
+  --dark-background: rgba(255, 255, 255, 0.1);
+  --light-background: #ffffff;
+  /*fonts*/
+  --main-font: Roboto, sans-serif;
+  --secondary-font: Raleway, sans-serif;
+  --timer: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop {
@@ -223,6 +536,30 @@ img {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+}
+
+:root {
+  /*baclgraund color*/
+  --b-dark: #2f303a;
+  --b-middle: #f5f4fa;
+  --b-blue: #2196f3;
+  --b-white: #ffffff;
+  --b-black: #000000;
+  /*text color*/
+  --txt-dark: #212121;
+  --txt-grey: #757575;
+  --txt-light: #ffffff;
+  --txt-bleu: #2196f3;
+  /*icon*/
+  --light: #afb1b8;
+  --white: #ffffff;
+  --accent-background: #2196f3;
+  --dark-background: rgba(255, 255, 255, 0.1);
+  --light-background: #ffffff;
+  /*fonts*/
+  --main-font: Roboto, sans-serif;
+  --secondary-font: Raleway, sans-serif;
+  --timer: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .feedback-form {
@@ -397,6 +734,30 @@ img {
   outline: none;
 }
 
+:root {
+  /*baclgraund color*/
+  --b-dark: #2f303a;
+  --b-middle: #f5f4fa;
+  --b-blue: #2196f3;
+  --b-white: #ffffff;
+  --b-black: #000000;
+  /*text color*/
+  --txt-dark: #212121;
+  --txt-grey: #757575;
+  --txt-light: #ffffff;
+  --txt-bleu: #2196f3;
+  /*icon*/
+  --light: #afb1b8;
+  --white: #ffffff;
+  --accent-background: #2196f3;
+  --dark-background: rgba(255, 255, 255, 0.1);
+  --light-background: #ffffff;
+  /*fonts*/
+  --main-font: Roboto, sans-serif;
+  --secondary-font: Raleway, sans-serif;
+  --timer: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .head {
   padding-top: 24px;
   padding-bottom: 25px;
@@ -532,6 +893,30 @@ a.accent::after {
   background-color: var(--b-blue);
 }
 
+:root {
+  /*baclgraund color*/
+  --b-dark: #2f303a;
+  --b-middle: #f5f4fa;
+  --b-blue: #2196f3;
+  --b-white: #ffffff;
+  --b-black: #000000;
+  /*text color*/
+  --txt-dark: #212121;
+  --txt-grey: #757575;
+  --txt-light: #ffffff;
+  --txt-bleu: #2196f3;
+  /*icon*/
+  --light: #afb1b8;
+  --white: #ffffff;
+  --accent-background: #2196f3;
+  --dark-background: rgba(255, 255, 255, 0.1);
+  --light-background: #ffffff;
+  /*fonts*/
+  --main-font: Roboto, sans-serif;
+  --secondary-font: Raleway, sans-serif;
+  --timer: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .hero {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -613,6 +998,30 @@ a.accent::after {
           transform: opasity;
 }
 
+:root {
+  /*baclgraund color*/
+  --b-dark: #2f303a;
+  --b-middle: #f5f4fa;
+  --b-blue: #2196f3;
+  --b-white: #ffffff;
+  --b-black: #000000;
+  /*text color*/
+  --txt-dark: #212121;
+  --txt-grey: #757575;
+  --txt-light: #ffffff;
+  --txt-bleu: #2196f3;
+  /*icon*/
+  --light: #afb1b8;
+  --white: #ffffff;
+  --accent-background: #2196f3;
+  --dark-background: rgba(255, 255, 255, 0.1);
+  --light-background: #ffffff;
+  /*fonts*/
+  --main-font: Roboto, sans-serif;
+  --secondary-font: Raleway, sans-serif;
+  --timer: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .advance {
   padding-bottom: 0;
 }
@@ -665,6 +1074,30 @@ a.accent::after {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+:root {
+  /*baclgraund color*/
+  --b-dark: #2f303a;
+  --b-middle: #f5f4fa;
+  --b-blue: #2196f3;
+  --b-white: #ffffff;
+  --b-black: #000000;
+  /*text color*/
+  --txt-dark: #212121;
+  --txt-grey: #757575;
+  --txt-light: #ffffff;
+  --txt-bleu: #2196f3;
+  /*icon*/
+  --light: #afb1b8;
+  --white: #ffffff;
+  --accent-background: #2196f3;
+  --dark-background: rgba(255, 255, 255, 0.1);
+  --light-background: #ffffff;
+  /*fonts*/
+  --main-font: Roboto, sans-serif;
+  --secondary-font: Raleway, sans-serif;
+  --timer: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .secodary-title {
@@ -720,6 +1153,30 @@ a.accent::after {
   text-transform: uppercase;
 }
 
+:root {
+  /*baclgraund color*/
+  --b-dark: #2f303a;
+  --b-middle: #f5f4fa;
+  --b-blue: #2196f3;
+  --b-white: #ffffff;
+  --b-black: #000000;
+  /*text color*/
+  --txt-dark: #212121;
+  --txt-grey: #757575;
+  --txt-light: #ffffff;
+  --txt-bleu: #2196f3;
+  /*icon*/
+  --light: #afb1b8;
+  --white: #ffffff;
+  --accent-background: #2196f3;
+  --dark-background: rgba(255, 255, 255, 0.1);
+  --light-background: #ffffff;
+  /*fonts*/
+  --main-font: Roboto, sans-serif;
+  --secondary-font: Raleway, sans-serif;
+  --timer: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .team {
   background-color: var(--b-middle);
   min-height: 648px;
@@ -770,6 +1227,30 @@ a.accent::after {
   line-height: 1.19;
   letter-spacing: 0.03em;
   margin-bottom: 16px;
+}
+
+:root {
+  /*baclgraund color*/
+  --b-dark: #2f303a;
+  --b-middle: #f5f4fa;
+  --b-blue: #2196f3;
+  --b-white: #ffffff;
+  --b-black: #000000;
+  /*text color*/
+  --txt-dark: #212121;
+  --txt-grey: #757575;
+  --txt-light: #ffffff;
+  --txt-bleu: #2196f3;
+  /*icon*/
+  --light: #afb1b8;
+  --white: #ffffff;
+  --accent-background: #2196f3;
+  --dark-background: rgba(255, 255, 255, 0.1);
+  --light-background: #ffffff;
+  /*fonts*/
+  --main-font: Roboto, sans-serif;
+  --secondary-font: Raleway, sans-serif;
+  --timer: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client {
@@ -837,6 +1318,30 @@ a.accent::after {
   fill: var(--accent-background);
   -webkit-transform: opasity;
           transform: opasity;
+}
+
+:root {
+  /*baclgraund color*/
+  --b-dark: #2f303a;
+  --b-middle: #f5f4fa;
+  --b-blue: #2196f3;
+  --b-white: #ffffff;
+  --b-black: #000000;
+  /*text color*/
+  --txt-dark: #212121;
+  --txt-grey: #757575;
+  --txt-light: #ffffff;
+  --txt-bleu: #2196f3;
+  /*icon*/
+  --light: #afb1b8;
+  --white: #ffffff;
+  --accent-background: #2196f3;
+  --dark-background: rgba(255, 255, 255, 0.1);
+  --light-background: #ffffff;
+  /*fonts*/
+  --main-font: Roboto, sans-serif;
+  --secondary-font: Raleway, sans-serif;
+  --timer: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer {

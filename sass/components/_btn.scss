@@ -1,6 +1,8 @@
+@import "../utils/variables";
+
 .btn {
   background-color: var(--b-blue);
-  font-family: var(--secondary-font);
+  font-family: var(--main-font);
   font-weight: bold;
   font-size: 16px;
   line-height: 1.87;
